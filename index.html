@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Empowerment - Breast Cancer Awareness Fundraiser</title>
+    <meta property="og:title" content="Marathi Library - Triveni Mitra Mandal">
+    <meta property="og:description" content="Watch and Make a Difference: A portion of every ticket for ASHA Movie supports ASHA Foundation.">
+    <meta property="og:image" content="https://tmmcommunications2026-max.github.io/marathi-library/asha-thumbnail.jpg">
+    <meta property="og:type" content="event">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .flyer-container {
+            max-width: 650px;
+            width: 100%;
+            background: white;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .flyer-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.4);
+        }
+
+        .flyer-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Interactive button overlays */
+        .button-overlay {
+            position: absolute;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 10px;
+            z-index: 10;
+        }
+
+        .button-overlay:hover {
+            transform: scale(1.05);
+        }
+
+        .button-overlay:active {
+            transform: scale(0.98);
+        }
+
+        .donate-button {
+            top: 42.5%;
+            right: 6%;
+            width: 44%;
+            height: 4.5%;
+        }
+
+        .donate-button:hover {
+            box-shadow: 0 5px 20px rgba(212, 20, 90, 0.4);
+        }
+
+        .tickets-button {
+            top: 42.5%;
+            left: 6%;
+            width: 44%;
+            height: 4.5%;
+        }
+
+        .tickets-button:hover {
+            box-shadow: 0 5px 20px rgba(74, 144, 226, 0.4);
+        }
+
+        /* Loading state */
+        .loading {
+            text-align: center;
+            padding: 60px 20px;
+            color: #666;
+            font-size: 18px;
+        }
+
+        /* Desktop - Large screens */
+        @media (min-width: 1200px) {
+            .flyer-container {
+                max-width: 700px;
+            }
+        }
+
+        /* Tablet - Medium screens */
+        @media (max-width: 1024px) {
+            body {
+                padding: 15px;
+            }
+
+            .flyer-container {
+                max-width: 600px;
+            }
+        }
+
+        /* Tablet Portrait & Mobile Landscape */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+                align-items: flex-start;
+                padding-top: 20px;
+            }
+            
+            .flyer-container {
+                border-radius: 10px;
+                max-width: 100%;
+            }
+
+            .flyer-container:hover {
+                transform: translateY(-3px);
+            }
+
+            .button-overlay:hover {
+                transform: scale(1.03);
+            }
+        }
+
+        /* Mobile - Small screens */
+        @media (max-width: 480px) {
+            body {
+                padding: 5px;
+                padding-top: 10px;
+            }
+            
+            .flyer-container {
+                border-radius: 8px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            }
+
+            .flyer-container:hover {
+                transform: none;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            }
+
+            .button-overlay {
+                border-radius: 6px;
+            }
+
+            /* Adjust button positions for mobile */
+            .tickets-button,
+            .donate-button {
+                height: 5%;
+            }
+        }
+
+        /* Extra small mobile devices */
+        @media (max-width: 360px) {
+            body {
+                padding: 3px;
+                padding-top: 8px;
+            }
+
+            .flyer-container {
+                border-radius: 6px;
+            }
+
+            .button-overlay {
+                border-radius: 4px;
+            }
+        }
+
+        /* Landscape orientation specific */
+        @media (max-height: 600px) and (orientation: landscape) {
+            body {
+                padding: 10px;
+                align-items: flex-start;
+            }
+
+            .flyer-container {
+                max-width: 500px;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .flyer-container {
+                max-width: 100%;
+                box-shadow: none;
+                border-radius: 0;
+            }
+
+            .flyer-container:hover {
+                transform: none;
+            }
+
+            .button-overlay {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flyer-container">
+        <img 
+            src="https://tmmcommunications2026-max.github.io/ASHA-donation/Design-1770572781788.jpg" 
+            alt="Women Empowerment - Breast Cancer Awareness Fundraiser by Triveni Mitra Mandal" 
+            class="flyer-image"
+            onerror="this.parentElement.innerHTML='<div class=\'loading\'>Image could not be loaded. Please check the URL.</div>'"
+        >
+        <!-- Get Tickets Button Overlay -->
+        <a 
+            href="https://www.zeffy.com/en-US/ticketing/eb7b1db0-f8ca-4236-bfd1-cee527ba75fd" 
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button-overlay tickets-button"
+            title="Get Tickets - Women Empowerment Event"
+            aria-label="Get Tickets"
+        ></a>
+        <!-- Donate Now Button Overlay -->
+        <a 
+            href="https://www.zeffy.com/en-US/donation-form/project-asha-breast-cancer-awareness" 
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button-overlay donate-button"
+            title="Donate Now - Support ASHA Breast Cancer Awareness"
+            aria-label="Donate Now"
+        ></a>
+    </div>
+</body>
+</html>
